@@ -21,14 +21,14 @@ namespace PlasmaPeasant
         Rectangle backgroundRct;
 
         //attributes for buttons
-        Button resumeButton;
+        Button backButton;
 
         //custom color
         Color neonPink;
 
         public OptionsScreen()
         {
-            resumeButton = new Button(350, 200, 100, 50);
+            backButton = new Button(350, 200, 100, 50);
             neonPink = new Color(255, 0, 255);
             backgroundRct = new Rectangle(100, 100, 600, 400);
         }
@@ -37,13 +37,13 @@ namespace PlasmaPeasant
         public override void Load(ContentManager content)
         {
             optionsBackground = content.Load<Texture2D>("optionsBackground");
-            resumeButton.Texture = content.Load<Texture2D>("resumeButton");
+            backButton.Texture = content.Load<Texture2D>("backButton");
         }
 
-        //if resume is pressed moves to MainScreen GameState
+        //if resume is pressed moves to the Main Menu
         public override void Update()
         {
-            if (resumeButton.IsPressed())
+            if (backButton.IsPressed())
             {
                 Game1.currentScreen = Game1.GameStates.MainScreen;
             }
@@ -54,7 +54,7 @@ namespace PlasmaPeasant
         {
             //seems to be an error when switching between GameStates
             spriteBatch.Draw(optionsBackground, backgroundRct, Color.White);
-            resumeButton.Draw(spriteBatch, neonPink);           
+            backButton.Draw(spriteBatch, neonPink);           
         }
     }
 }
