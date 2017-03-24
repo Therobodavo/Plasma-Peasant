@@ -17,7 +17,7 @@ namespace PlasmaPeasant
     class ShopScreen : Screen
     {
         //attributes for the background
-        Texture2D optionsBackground; //need to change to a shop background
+        Texture2D shopBackground;
         Rectangle backgroundRct;
 
         //attributes for buttons
@@ -36,7 +36,7 @@ namespace PlasmaPeasant
         //loads in the textures needed
         public override void Load(ContentManager content)
         {
-            optionsBackground = content.Load<Texture2D>("optionsBackground"); //need different background texture
+            shopBackground = content.Load<Texture2D>("shopBackground"); //need different background texture
             backButton.Texture = content.Load<Texture2D>("backButton");
         }
 
