@@ -1,0 +1,24 @@
+Plasma Peasant
+Group: The Number Five
+Info file made by David Knolls
+
+All Level generation is done through files created by the External Tool
+
+Controls are:
+
+WASD - movement
+Space - Attack
+ESC - exit game screen (return to main menu)
+
+Instructions:
+
+Your goal is to go forward until the 12th room , where you will have to fight a boss. To progress from one room to the next, you must take out
+all of the enemies in the current room. To go to the next room, you must go through the portal located in the upper middle section of the room.
+Items are in some of the rooms, and these items vary from potions to speed boosts and damage boosts. As you progress, you will notice
+your weapon gets upgraded to deal with the harder enemies. It is also important you pick up the items, as without them you will be taken out by the enemies
+very quickly.
+
+Once you beat all of the enemies in the 12th room, you will be taken back to the main menu. Feel free to play again, as the overall goal is for you to try
+and beat the entire dungeon as easily as possible.
+
+If you wish to leave the game, press esc to return to the main menu. From there, you can click exit and the gme will close.
