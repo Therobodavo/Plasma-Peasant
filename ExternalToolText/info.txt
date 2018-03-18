@@ -1,0 +1,68 @@
+Plasma Peasant External Tool
+
+------------------------------------------------------------------
+
+Directions
+
+------------------------------------------------------------------
+
+Steps:
+
+1. - Exit Point - Decision
+The tool will first ask if you would like to create a file (go to 2a.), set a file to be used by the game (go to 3a.), or exit (which will exit the application).
+
+2a.
+If you choose create, it will give information on the process of doing so and have you name a file, and then checks to see if it exists.
+If it does not exist, it makes a new file.
+If it does, it appends the existing file and starts writing on the next line of the file.
+
+You are not overwriting or changing existing attributes for existing objects that you already created in files, but adding to the file. If you want to restart, make another file, or delete the one with the filename you want to use in the levels folder.
+
+2b. - Object Decision
+It then asks the user what type of object they would like to make.
+
+You can currently make an enemy, choosing from the three types we made for the game, a structure, an item (potion, speed boost, damage buff), or weapons.
+
+2c.
+Now that you have a file to add to and the type of object, the tool asks you to enter values for certain attributes.
+The input is then written to the text file and delimited by a comma from the next value.
+
+The attributes may be: x/y location, width and height, health, damage, a value for items, or speed - they are explained in the console.
+
+2d. - Decision
+It will then ask if you want to add another object. Selecting yes takes you to step 2b.
+
+2e. - Decision
+If you type no, you will be asked if you want to add a door, just as a reminder in case you forgot. Answering yes makes you type in attributes for the door. After that, or if you answered no, it will ask if you want to copy the contents of the file to be used in the game. If yes, go to step 3a.
+
+2f. - Exit Point - Decision
+If you do not want to copy the contents now, it will then ask if you want to create another file. Saying yes will take you to step 2a. Saying no will exit the program.
+
+3a.
+To begin the copying process, it will ask you the name of the custom file that you want to use in the level. If there is no file and you got here by accident, type 'Go back' and go to step 2e or 1 depending on when you decided to copy, to avoid getting stuck in some kind of loop. 
+
+3b.
+If valid, it will copy the contents to a list, and then ask what level you want to copy the contents into for use in the game.
+
+3c. - Decision
+If a valid level name (level1, level2, level3), it will copy the contents. It will then ask if you would like to copy again. If yes, go to step 3a. If no, go to step 2f. If you selected use at the start of the program, go to step 1.
+
+------------------------------------------------------------------
+
+Information
+
+------------------------------------------------------------------
+
+Classes: There is a Write and Menu class, handling the writing to the file and the simple menu system. The Designate class is used in copying custom files to the level1, level2, etc files to be used in loading the game's levels.
+
+The tool allows you to go through a file multiple times to create more lines of attributes for other objects, to cut down on number of files.
+
+To add multiple types of objects to one file, you can either append an existing file or say yes when asked if you would like to keep adding objects to the file.
+
+You can create multiple files or designate files for loading into the game in one go without restarting the tool.
+
+Only one file's contents can be used at a time to load into a level. Different or the same files can be used for different levels, but attempting to add another files contents to the level1 file, for example, will not work since it overwrites, rather than appends, the contents of the level1 file. So you can make multiple configurations for one level, but will have to switch them out with the tool to test them each out in the game.
+
+The level files are loaded and used upon level creation.
+
+-Kyle Fasanella
