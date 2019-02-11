@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9A646A8-4BE5-4450-8841-30EA97792446}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlasmaPeasant</RootNamespace>
+    <AssemblyName>PlasmaPeasant</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Arena.cs" />
+    <Compile Include="Bag.cs" />
+    <Compile Include="Button.cs" />
+    <Compile Include="Characters.cs" />
+    <Compile Include="Door.cs" />
+    <Compile Include="Enemy.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="HealthBar.cs" />
+    <Compile Include="InventoryScreen.cs" />
+    <Compile Include="Items.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="Objects.cs" />
+    <Compile Include="OptionsScreen.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Projectile.cs" />
+    <Compile Include="RangedWeap.cs" />
+    <Compile Include="Screen.cs" />
+    <Compile Include="ShopScreen.cs" />
+    <Compile Include="Weapon.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+    <None Include="Content\mainFont.xnb" />
+    <None Include="Content\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\backButton.png" />
+    <Content Include="Content\background.png" />
+    <Content Include="Content\ball.png" />
+    <Content Include="Content\BottomLeft.png" />
+    <Content Include="Content\BottomRight.png" />
+    <Content Include="Content\chrome.png" />
+    <Content Include="Content\DamageBuff.png" />
+    <Content Include="Content\DoorClosed.png" />
+    <Content Include="Content\DoorOpen.png" />
+    <Content Include="Content\enemy1.png" />
+    <Content Include="Content\enemy1Sheet.png" />
+    <Content Include="Content\Enemy2.png" />
+    <Content Include="Content\Enemy2AnimFull.png" />
+    <Content Include="Content\Enemy3.png" />
+    <Content Include="Content\Enemy3AnimFull.png" />
+    <Content Include="Content\exitButton.png" />
+    <Content Include="Content\floor.png" />
+    <Content Include="Content\grate.png" />
+    <Content Include="Content\grateLessOld.png" />
+    <Content Include="Content\grateold.png" />
+    <Content Include="Content\health.png" />
+    <Content Include="Content\healthBar.png" />
+    <Content Include="Content\level1.png" />
+    <Content Include="Content\level2backup.png" />
+    <Content Include="Content\level3.png" />
+    <Content Include="Content\mainBack.png" />
+    <Content Include="Content\optionsBackground.png" />
+    <Content Include="Content\optionsButton.png" />
+    <Content Include="Content\Peasant.png" />
+    <Content Include="Content\plasmaBolt.png" />
+    <Content Include="Content\plasmaBoltSheet.png" />
+    <Content Include="Content\plasmaBoltSheetEnemy2.png" />
+    <Content Include="Content\plasmaBoltSheetEnemy3Sheet.png" />
+    <Content Include="Content\plasmaBoltSheetPurpleEnemy1.png" />
+    <Content Include="Content\PlasmaLogo.png" />
+    <Content Include="Content\playButton.png" />
+    <Content Include="Content\playerAnimFull.png" />
+    <Content Include="Content\playerSprites.png" />
+    <Content Include="Content\Potion.png" />
+    <Content Include="Content\resumeButton.png" />
+    <Content Include="Content\shopBackground.png" />
+    <Content Include="Content\shopButton.png" />
+    <Content Include="Content\SpeedBoost.png" />
+    <Content Include="Content\stoneSlot.png" />
+    <Content Include="Content\structureTex.png" />
+    <Content Include="Content\sword.png" />
+    <Content Include="Content\testItem.png" />
+    <Content Include="Content\TestLevel.txt" />
+    <Content Include="Content\testTile.png" />
+    <Content Include="Content\TopLeft.png" />
+    <Content Include="Content\TopRight.png" />
+    <Content Include="Content\Vertical.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
